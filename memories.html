@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Our Memories - Aaradhya & Me</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Great+Vibes&display=swap" rel="stylesheet" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(circle at top, #2b1055, #000);
+      color: #fff;
+      font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
+      padding: 20px 10px;
+    }
+
+    .container {
+      max-width: 900px;
+      width: 100%;
+      background: rgba(6, 0, 25, 0.7);
+      border-radius: 24px;
+      padding: 24px 20px 30px;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.18);
+      backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+
+    .title {
+      text-align: center;
+      margin-bottom: 6px;
+      font-family: "Great Vibes", cursive;
+      font-size: 38px;
+      color: #ffb6ec;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-size: 14px;
+      color: #ffd1f7;
+      margin-bottom: 18px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 14px;
+    }
+
+    .photo-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      box-shadow: 0 0 18px rgba(0, 0, 0, 0.6);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .photo-card:hover {
+      transform: translateY(-4px) scale(1.02);
+      box-shadow: 0 0 26px rgba(255, 143, 178, 0.9);
+    }
+
+    .photo-card img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+      height: 260px;
+    }
+
+    .caption {
+      padding: 10px 12px 12px;
+      font-size: 13px;
+      color: #f5e9ff;
+      text-align: center;
+    }
+
+    .back-btn {
+      margin-top: 18px;
+      text-align: center;
+    }
+
+    .back-btn button {
+      padding: 10px 22px;
+      border-radius: 999px;
+      border: none;
+      cursor: pointer;
+      font-size: 13px;
+      letter-spacing: 0.9px;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: #fff;
+      background: linear-gradient(120deg, #ff758c, #ff7eb3, #ff9a9e);
+      background-size: 200%;
+      box-shadow: 0 0 16px rgba(255, 143, 178, 0.9);
+      transition: 0.28s;
+    }
+
+    .back-btn button:hover {
+      transform: translateY(-2px) scale(1.04);
+      background-position: 100% 0;
+      box-shadow: 0 0 22px rgba(255, 143, 178, 1);
+    }
+
+    @media (max-width: 480px) {
+      .title {
+        font-size: 32px;
+      }
+      .photo-card img {
+        height: 220px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="title">Our Little Fair Memories</div>
+    <div class="subtitle">Some moments from a night that means a lot to me 🥹❤️</div>
+
+    <div class="grid">
+      <div class="photo-card">
+        <img src="WhatsApp-Image-2025-12-31-at-11.39.56-AM.jpg" alt="Us together selfie" />
+        <div class="caption">The selfie where my whole world fit in one frame.</div>
+      </div>
+
+      <div class="photo-card">
+        <img src="604590613_864818763391048_7580409720178981030_n.jpg" alt="Standing together with lights" />
+        <div class="caption">You, me, and a sky full of lights behind us.</div>
+      </div>
+
+      <div class="photo-card">
+        <img src="WhatsApp-Image-2025-12-31-at-11.39.57-AM.jpg" alt="Holding hands" />
+        <div class="caption">My favourite part: when your hand found mine and didn’t let go.</div>
+      </div>
+    </div>
+
+    <div class="back-btn">
+      <button onclick="window.location.href='index.html'">⬅ Back to New Year wish</button>
+    </div>
+  </div>
+</body>
+</html>
